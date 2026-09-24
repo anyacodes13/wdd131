@@ -13,6 +13,7 @@ function changeTheme() {
         document.querySelector('img').src = 'images/byui-logo-dark.png';
         document.body.style.color = 'white';
         document.querySelector("body").style.border = '1px solid #ccc';
+        document.querySelector("h2").style.color = '#008deb';
         
     } else {
         document.body.style.backgroundColor = 'white';
@@ -21,6 +22,7 @@ function changeTheme() {
         document.body.style.color = 'black';
         document.querySelector('header').style.color = 'black';
         document.querySelector("body").style.border = '1px solid black';
+        document.querySelector("h2").style.color = '#006EB6';
     }
 }           
                     

@@ -1,24 +1,19 @@
-const gallery = document.querySelector('.gallery');
-const modal = document.querySelector('dialog');
-const modalImage = modal.querySelector('img');
-const closeButton = modal.querySelector('.close-viewer');
+// Grab the HTML elements we need to work with
+let gallerySection = document.querySelector('.gallery');
+let modal = document.querySelector('dialog');
+let button = document.querySelector('button');
+let modalImage = modal.querySelector('img');
 
-// Event listener for opening the modal
-gallery.addEventListener('click', openModal);
-
-function openModal(e) {
-    
-// Code to show modal  - Use event parameter 'e'   
-    
-}
-// Close modal on button click
-closeButton.addEventListener('click', () => {
-    modal.close();
+// add an event listener to the gallery container to handle clicks on images
+gallerySection.addEventListener('click', (event) => {
+    console.log(event.target.src);
+    if (event.target.src !== undefined) {
+        modal.showModal();
+        modalImage.src = event.target.src.replace('-sm', '-full');
+    }
 });
 
-// Close modal if clicking outside the image
-modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        modal.close();
-    }
+button.addEventListener('click', (event) => {
+    modal.close();
+    modalImage.src = '';
 });

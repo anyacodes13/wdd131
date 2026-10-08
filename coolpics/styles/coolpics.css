@@ -114,8 +114,15 @@ footer {
 }
 
 @media (min-width: 1200px) {
- .menu-btn {
+    #menu-btn {
         display: none;
+    }
+    .mobile-nav {
+    display: none;
+    }
+    nav {
+        display: block;
+        text-align: center;
     }
     nav ul {
         list-style: none;
@@ -137,7 +144,6 @@ footer {
         color: #616061;
     }
     dialog img {
-        /* width: 60%; */
         margin: 15vh auto;
         width: 50%;
         height: auto;

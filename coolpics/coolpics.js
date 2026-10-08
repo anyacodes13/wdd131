@@ -3,6 +3,7 @@ let gallerySection = document.querySelector('#image_display');
 let modal = document.querySelector('dialog');
 let button = document.querySelector('button');
 let modalImage = modal.querySelector('img');
+let menuBtn = document.querySelector("#menu-btn");
 
 // add an event listener to the gallery container to handle clicks on images
 gallerySection.addEventListener('click', (event) => {
@@ -25,3 +26,15 @@ modal.addEventListener('click', (event) => {
         
     }
 });
+
+
+
+function toggleMenu() {
+    menuBtn.classList.toggle("change");
+    console.log("click");
+    let mobileNav = document.querySelector(".mobile-nav");
+    mobileNav.style.display = mobileNav.style.display === '' ? "flex" : '';
+    // mobileNav.style.display = mobileNav.style.display === '' ? "flex" : '';
+}
+
+menuBtn.addEventListener("click", toggleMenu);

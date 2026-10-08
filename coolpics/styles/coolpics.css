@@ -1,5 +1,6 @@
+
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -12,36 +13,44 @@ h1{
     color: white;
 }
 
-nav {
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-}
 
-.menu-btn{
+#menu-btn {
     color:white;
     font-size: 1.2em;
     text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
+nav {
+    display: none;
+}
+nav a {
+    padding: 20px;
+    color: white;
+}
 nav a:hover {
-    text-decoration: none;
-    color: #616061;
+    text-decoration: underline;
+    color: lightgrey;
 }
 
-nav ul {
+.mobile-nav {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+}
+
+.mobile-nav a {
+    display: block;
+}
+
+ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: none;
-    justify-content: center;
-}
-nav ul li {
-    margin: 0 15px;
-}
-nav ul li a { 
-    text-decoration: none;
-    color: white;
 }
 
 main {

@@ -1,5 +1,5 @@
 // Grab the HTML elements we need to work with
-let gallerySection = document.querySelector('.gallery');
+let gallerySection = document.querySelector('#image_display');
 let modal = document.querySelector('dialog');
 let button = document.querySelector('button');
 let modalImage = modal.querySelector('img');

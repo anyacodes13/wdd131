@@ -67,6 +67,9 @@ main {
 
 .book_details {
   grid-area: details;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
 }
 
 .book_details h2 {
@@ -76,7 +79,7 @@ main {
 }
 
 .book_details img {
-  grid-column: 2;
+  grid-column: span 2;
   width: 220px;
   max-width: 100%;
   margin: 0 auto;
@@ -166,7 +169,7 @@ footer p {
 
   .book_details img {
     width: 140px;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .book_details p {

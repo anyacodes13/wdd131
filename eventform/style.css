@@ -61,4 +61,8 @@ button:hover {
   margin-top: 1rem;
   font-weight: bold;
 }
+
+.hidden {
+    display: none;
+}
           
